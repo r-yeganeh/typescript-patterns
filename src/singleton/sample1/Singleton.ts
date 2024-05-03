@@ -1,5 +1,10 @@
 /**
- * The Singleton class defines the `getInstance` method that lets clients access
+ * The Singleton pattern is particularly useful in TypeScript when you want to ensure that a class
+ * has only one instance while providing a global point of access to this instance.
+ * Common applications of the Singleton pattern in TypeScript include managing connections to a
+ * database or implementing a service that needs to maintain a state throughout the app's lifecycle.
+ *
+ * This Singleton class defines the `getInstance` method that lets clients access
  * the unique singleton instance.
  */
 export class Singleton {
