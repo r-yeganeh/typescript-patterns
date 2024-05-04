@@ -9,9 +9,10 @@ import { DecoratorModule } from './decorator/decorator.module';
 import { CompositeModule } from './composite/composite.module';
 import { FacadeService } from './facade/facade.service';
 import { FacadeModule } from './facade/facade.module';
+import { TemplateMethodModule } from './template-method/template-method.module';
 
 @Module({
-  imports: [SingletonModule, PrototypeModule, AdapterModule, DecoratorModule, CompositeModule, FacadeModule],
+  imports: [SingletonModule, PrototypeModule, AdapterModule, DecoratorModule, CompositeModule, FacadeModule, TemplateMethodModule],
   controllers: [AppController],
   providers: [AppService, SingletonService, FacadeService],
 })
