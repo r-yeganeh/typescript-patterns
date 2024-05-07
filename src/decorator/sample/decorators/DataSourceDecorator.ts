@@ -1,7 +1,8 @@
-import { DataSource } from './DataSource';
+import { DataSource } from '../DataSource';
 
+// Base Decorator: defines an interface that conforms to the component's interface.
 export class DataSourceDecorator implements DataSource {
-  protected source: DataSource;
+  protected source: DataSource; // Maintains a reference to a component object
 
   constructor(source: DataSource) {
     this.source = source;

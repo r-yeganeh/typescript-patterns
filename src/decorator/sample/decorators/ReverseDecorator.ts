@@ -1,5 +1,6 @@
 import { DataSourceDecorator } from './DataSourceDecorator';
 
+// Concrete Decorator
 export class ReverseDecorator extends DataSourceDecorator {
   writeData(data: string): void {
     const reversedData = data.split('').reverse().join('');

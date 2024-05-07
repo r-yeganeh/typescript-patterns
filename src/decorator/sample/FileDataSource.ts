@@ -1,5 +1,6 @@
 import { DataSource } from './DataSource';
 
+//Concrete Component - A basic implementation of the component interface.
 export class FileDataSource implements DataSource {
   private fileName: string;
   private data: string;

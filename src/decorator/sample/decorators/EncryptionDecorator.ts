@@ -1,5 +1,6 @@
 import { DataSourceDecorator } from './DataSourceDecorator';
 
+// Concrete Decorator
 export class EncryptionDecorator extends DataSourceDecorator {
   writeData(data: string): void {
     const base64Data = btoa(data);

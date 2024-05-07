@@ -22,5 +22,6 @@ describe('SingletonService', () => {
     const s2 = Singleton.getInstance();
     expect(s1).toEqual(s2); //Singleton works, both variables contain the same instance.
     expect(s1 === s2).toBeTruthy();
+    console.log(s2.someBusinessLogic());
   });
 });

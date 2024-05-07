@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { DecoratorService } from './decorator.service';
 import { FileDataSource } from './sample/FileDataSource';
-import { EncryptionDecorator } from './sample/EncryptionDecorator';
-import { ReverseDecorator } from './sample/ReverseDecorator';
-import { UppercaseDecorator } from './sample/UppercaseDecorator';
+import { EncryptionDecorator } from './sample/decorators/EncryptionDecorator';
+import { ReverseDecorator } from './sample/decorators/ReverseDecorator';
+import { UppercaseDecorator } from './sample/decorators/UppercaseDecorator';
 
 describe('DecoratorService', () => {
   let service: DecoratorService;

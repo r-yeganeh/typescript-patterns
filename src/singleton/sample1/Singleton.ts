@@ -10,6 +10,8 @@
 export class Singleton {
   private static instance: Singleton;
 
+  private themeColor = 'red';
+
   /**
    * The Singleton's constructor should always be private to prevent direct
    * construction calls with the `new` operator.
@@ -36,5 +38,8 @@ export class Singleton {
    */
   public someBusinessLogic() {
     console.log('running business logic ...');
+    console.log('themeColor:', this.themeColor);
+    this.themeColor = 'blue';
+    console.log('show:', this.themeColor, '-', Singleton.instance);
   }
 }
