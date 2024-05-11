@@ -49,5 +49,12 @@ describe('PrototypeService', () => {
     expect(clonable1).toEqual(car);
     const clonable2 = truck.clone();
     expect(clonable2).toEqual(truck);
+    const complex = new ComplexVehicle('asdas', 'dfd', {
+      horsepower: 2,
+      type: 'dfd',
+    });
+    const clone = complex.clone();
+    console.log(clone);
+    expect(clone).toEqual(complex);
   });
 });
