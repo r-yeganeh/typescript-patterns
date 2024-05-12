@@ -13,6 +13,7 @@ import { TemplateMethodModule } from './template-method/template-method.module';
 import { StrategyModule } from './strategy/strategy.module';
 import { RepositoryModule } from './repository/repository.module';
 import { ObjectionModule } from '@willsoto/nestjs-objection';
+import { ChainModule } from './chain/chain.module';
 
 @Module({
   imports: [
@@ -38,6 +39,7 @@ import { ObjectionModule } from '@willsoto/nestjs-objection';
         },
       },
     }),
+    ChainModule,
   ],
   controllers: [AppController],
   providers: [AppService, SingletonService, FacadeService],
