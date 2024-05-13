@@ -16,6 +16,7 @@ import { ObjectionModule } from '@willsoto/nestjs-objection';
 import { ChainModule } from './chain/chain.module';
 import { AbstractFactoryModule } from './abstract-factory/abstract-factory.module';
 import { BuilderModule } from './builder/builder.module';
+import { FactoryMethodModule } from './factory-method/factory-method.module';
 
 @Module({
   imports: [
@@ -44,6 +45,7 @@ import { BuilderModule } from './builder/builder.module';
     ChainModule,
     AbstractFactoryModule,
     BuilderModule,
+    FactoryMethodModule,
   ],
   controllers: [AppController],
   providers: [AppService, SingletonService, FacadeService],
