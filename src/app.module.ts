@@ -15,6 +15,7 @@ import { RepositoryModule } from './repository/repository.module';
 import { ObjectionModule } from '@willsoto/nestjs-objection';
 import { ChainModule } from './chain/chain.module';
 import { AbstractFactoryModule } from './abstract-factory/abstract-factory.module';
+import { BuilderModule } from './builder/builder.module';
 
 @Module({
   imports: [
@@ -42,6 +43,7 @@ import { AbstractFactoryModule } from './abstract-factory/abstract-factory.modul
     }),
     ChainModule,
     AbstractFactoryModule,
+    BuilderModule,
   ],
   controllers: [AppController],
   providers: [AppService, SingletonService, FacadeService],
