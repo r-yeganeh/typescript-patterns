@@ -18,6 +18,7 @@ import { AbstractFactoryModule } from './abstract-factory/abstract-factory.modul
 import { BuilderModule } from './builder/builder.module';
 import { FactoryMethodModule } from './factory-method/factory-method.module';
 import { BridgeModule } from './bridge/bridge.module';
+import { FlyweightModule } from './flyweight/flyweight.module';
 
 @Module({
   imports: [
@@ -48,6 +49,7 @@ import { BridgeModule } from './bridge/bridge.module';
     BuilderModule,
     FactoryMethodModule,
     BridgeModule,
+    FlyweightModule,
   ],
   controllers: [AppController],
   providers: [AppService, SingletonService, FacadeService],
