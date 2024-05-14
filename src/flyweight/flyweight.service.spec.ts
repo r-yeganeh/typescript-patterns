@@ -20,7 +20,7 @@ describe('FlyweightService', () => {
 
   it('should be defined', () => {
     // NOTE: this test cannot run without proper config
-    const canvas = document.createElement('canvas').getContext('2d')!;
+    const canvas = document.createElement('canvas').getContext('2d');
     const tree1 = new Tree(
       10,
       10,
