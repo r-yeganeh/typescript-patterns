@@ -1,4 +1,4 @@
-import { DatabaseConnection } from '../DatabaseConnection';
+import { DatabaseConnection } from '../product/DatabaseConnection';
 
 // Creator Abstract Class
 export abstract class DatabaseConnectionFactory {

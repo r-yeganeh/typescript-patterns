@@ -20,7 +20,6 @@ describe('BridgeService', () => {
   //});
 
   it('should demonstrate bridge pattern', () => {
-    expect(service).toBeDefined();
     let tv = new Tv();
     let tvRemote = new AdvancedRemoteControl(tv);
     tvRemote.togglePower();

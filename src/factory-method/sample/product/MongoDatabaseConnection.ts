@@ -1,4 +1,4 @@
-import { DatabaseConnection } from '../DatabaseConnection';
+import { DatabaseConnection } from './DatabaseConnection';
 
 export class MongoDatabaseConnection implements DatabaseConnection {
   connect(): void {

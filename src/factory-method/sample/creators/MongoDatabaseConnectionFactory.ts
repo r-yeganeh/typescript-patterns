@@ -1,6 +1,6 @@
-import { DatabaseConnection } from '../DatabaseConnection';
+import { DatabaseConnection } from '../product/DatabaseConnection';
 import { DatabaseConnectionFactory } from './DatabaseConnectionFactory';
-import { MongoDatabaseConnection } from '../products/MongoDatabaseConnection';
+import { MongoDatabaseConnection } from '../product/MongoDatabaseConnection';
 
 // Concrete Creator
 export class MongoDatabaseConnectionFactory extends DatabaseConnectionFactory {

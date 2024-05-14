@@ -1,4 +1,4 @@
-import { DatabaseConnection } from '../DatabaseConnection';
+import { DatabaseConnection } from './DatabaseConnection';
 
 // Concrete Product
 export class SqlDatabaseConnection implements DatabaseConnection {
