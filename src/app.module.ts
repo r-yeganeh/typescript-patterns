@@ -19,6 +19,7 @@ import { BuilderModule } from './builder/builder.module';
 import { FactoryMethodModule } from './factory-method/factory-method.module';
 import { BridgeModule } from './bridge/bridge.module';
 import { FlyweightModule } from './flyweight/flyweight.module';
+import { ProxyModule } from './proxy/proxy.module';
 
 @Module({
   imports: [
@@ -50,6 +51,7 @@ import { FlyweightModule } from './flyweight/flyweight.module';
     FactoryMethodModule,
     BridgeModule,
     FlyweightModule,
+    ProxyModule,
   ],
   controllers: [AppController],
   providers: [AppService, SingletonService, FacadeService],
