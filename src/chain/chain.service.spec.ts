@@ -21,9 +21,10 @@ describe('ChainService', () => {
 
   it('should demonstrate chain of responsibilities', () => {
     // Building the chain
-    const junior = new JuniorSupportHandler()
-      .setNext(new SeniorSupportHandler())
-      .setNext(new ManagerSupportHandler());
+    const junior = new JuniorSupportHandler();
+    const senior = junior.setNext(new SeniorSupportHandler());
+    senior.setNext(new ManagerSupportHandler());
+
     // run requests
     const requests = ['Simple Query', 'Complex Query', 'High-Level Issue'];
     service.clientCode(requests, junior);
